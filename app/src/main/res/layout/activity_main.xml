@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="469dp"
+        android:layout_height="787dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back2" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="451dp"
+        android:layout_height="492dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.695"
+        app:srcCompat="@drawable/thanos" />
+
+    <TextView
+        android:id="@+id/winnerid"
+        android:layout_width="191dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="360dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Soul Stone(Red) WON!!"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="134dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="click"
+        android:text="PLAY AGAIN"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/winnerid"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridlayout"
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="500dp"
+        android:alpha="1"
+        android:background="@drawable/blue"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.748"
+        app:rowCount="3"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/st1"
+            android:layout_width="116dp"
+            android:layout_height="123dp"
+            android:onClick="drop"
+            android:tag="0"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/st4"
+            android:layout_width="116dp"
+            android:layout_height="123dp"
+            android:onClick="drop"
+            android:tag="3"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/st2"
+            android:layout_width="116dp"
+            android:layout_height="123dp"
+            android:layout_marginLeft="12dp"
+            android:onClick="drop"
+            android:tag="1"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/st3"
+            android:layout_width="116dp"
+            android:layout_height="123dp"
+            android:layout_marginLeft="12dp"
+            android:onClick="drop"
+            android:tag="2" />
+        <ImageView
+            android:id="@+id/st5"
+            android:layout_width="116dp"
+            android:layout_height="123dp"
+            android:layout_marginLeft="12dp"
+            android:tag="4"
+           android:onClick="drop"/>
+        <ImageView
+            android:id="@+id/st6"
+            android:layout_width="116dp"
+            android:tag="5"
+            android:layout_height="123dp"
+            android:layout_marginLeft="12dp"
+           android:onClick="drop"/>
+        <ImageView
+            android:id="@+id/st7"
+            android:layout_width="116dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="12dp"
+            android:tag="6"
+           android:onClick="drop"/>
+        <ImageView
+            android:id="@+id/st8"
+            android:layout_width="116dp"
+            android:layout_height="123dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:tag="7"
+
+           android:onClick="drop"/>
+        <ImageView
+            android:id="@+id/st9"
+            android:layout_width="116dp"
+            android:layout_height="123dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:tag="8"
+           android:onClick="drop"/>
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
